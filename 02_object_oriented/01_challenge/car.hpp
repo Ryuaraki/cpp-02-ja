@@ -1,4 +1,6 @@
 #include <string>
+#include "logger.hpp"
+
 
 class Car {
 public:
@@ -14,10 +16,11 @@ public:
     void displayInfo() const;
 
 private:
-    void printPriceChange(double from, double to) const;
+    //[logMessageで代用の為、削除] void printPriceChange(double from, double to) const;
 
     std::string make;
     std::string model;
     int year;
     double price;
+    Logger logger;
 };
